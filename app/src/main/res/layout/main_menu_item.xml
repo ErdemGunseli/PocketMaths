@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relMainMenuItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvCollapsedMainMenuItem"
+        android:layout_width="175dp"
+        android:layout_height="225dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:id="@+id/relCollapsedMainMenuItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/txtQuestionSetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="13dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_below="@id/txtQuestionSetName"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/Silver">
+
+                <ImageView
+                    android:id="@+id/imgQuestionSet"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/question_set_image"
+                    />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvExpandedMainMenuItem"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvCollapsedMainMenuItem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/txtNumberOfQuestions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/YellowOrange"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCurrentQuestionIndex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/txtNumberOfQuestions"
+                android:textAlignment="viewEnd"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/YellowOrange"
+                />
+
+
+            <TextView
+                android:id="@+id/txtQuestionSetDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNumberOfQuestions"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStartQuestionSet"
+                style="@style/defaultTextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtQuestionSetDescription"
+                android:layout_centerHorizontal="true"
+                android:text="@string/start" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+
+
+
+
+

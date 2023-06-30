@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Pocket Maths</string>
+    <string name="welcome">Welcome To\nPocket Maths</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="continue_as_guest">Continue As Guest</string>
+
+    <string name="email">Email:\t</string>
+    <string name="password">Password:</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="email_not_registered">This Email Address Is Not Registered, Sign Up Instead</string>
+    <string name="confirm">Confirm</string>
+    <string name="back">Back</string>
+
+    <string name="parent_name">Parent Name:\t</string>
+    <string name="student_name">Student Name:\t</string>
+    <string name="confirm_password">Confirm Password: </string>
+    <string name="pin">Parental Pin: </string>
+    <string name="confirm_pin">Confirm Parental Pin: </string>
+    <string name="email_registered">This Email Address Is Already Registered, Sign In Instead</string>
+
+    <string name="email_sent">Email Sent</string>
+    <string name="check_email">Please Check The Email</string>
+    <string name="check_password">Please Check The Password</string>
+    <string name="check_password_length">Please Choose A Longer Password</string>
+    <string name="user_not_found">User Not Found</string>
+    <string name="empty_inputs">Please Fill In All The Inputs</string>
+    <string name="input_lengths">Please Check The Lengths Of The Inputs</string>
+    <string name="passwords_do_not_match">The Passwords Do Not Match</string>
+    <string name="pin_length">The Pin Needs To Be 4 Digits</string>
+    <string name="pins_do_not_match">The Pins Do Not Match</string>
+    <string name="ok">OK</string>
+
+    <string name="start">Start</string>
+    <string name="check">Check</string>
+    <string name="continue_">Continue</string>
+    <string name="number_of_questions">%d Questions</string>
+    <string name="on_question">On Question %d</string>
+    <string name="no_results">No Results Found</string>
+
+    <string name="question_x_of_x">Question %d of %d</string>
+    <string name="points">%d Points</string>
+    <string name="reveal_answer">Show\nAnswer</string>
+    <string name="try_first">Try This Question First!</string>
+    <string name="try_again">Try Again, You Can Do It!</string>
+    <string name="enter_answer">Please Enter An Answer</string>
+    <string name="finish">Finish</string>
+    <string name="exit">Exit</string>
+    <string name="answer">Answer</string>
+
+    <string name="results">Results:</string>
+    <string name="first_attempt">1st Attempt</string>
+    <string name="second_attempt">2nd Attempt</string>
+    <string name="other">Other</string>
+    <string name="x_points_out_of_x">%d Points out of %d</string>
+    <string name="solved_x_out_of_x_1attempt">Solved %d out of %d with one attempt.</string>
+    <string name="solved_x_out_of_x_2attempts">Solved %d out of the remaining %d with two attempts.</string>
+    <string name="result_percent">Result: %d%%</string>
+
+    <string name="did_great">You Did Great On: </string>
+    <string name="practice">You Could Practice: </string>
+
+    <string name="practice_topics">\nPractice the following topics:\n</string>
+    <string name="practice_models">\nPractice the following question types:\n</string>
+    <string name="review">Review: </string>
+    <string name="x_x_points">%d / %d Points</string>
+    <string name="initial_answer">Your Initial Answer: %s</string>
+    <string name="correct_answer">Correct Answer: %s</string>
+    <string name="list">\n\t %d) %s</string>
+
+    <string name="account">Account</string>
+    <string name="history">History: </string>
+    <string name="try_question_sets">Try Questions</string>
+    <string name="account_details">Account Details:</string>
+    <string name="view_account_details"> Parent Name: %s\nStudent Name: %s\nEmail: %s</string>
+    <string name="change_details">Change Details</string>
+    <string name="sign_out">Sign Out</string>
+
+    <string name="enter_pin">Enter Parental Pin</string>
+    <string name="parental_pin">- - - -</string>
+    <string name="incorrect_pin">Nice Try, Incorrect Pin</string>
+    <string name="cancel">Cancel</string>
+    <string name="account_needed">Account Needed</string>
+
+    <string name="save_changes">Save Changes</string>
+
+    <string name="pass_Mark">Pass Mark: %d%%</string>
+    <string name="create_task">Create Task</string>
+    <string name="create">Create</string>
+    <string name="remaining_tasks">Remaining Tasks:</string>
+    <string name="choose_qs">Please Select a Question Set</string>
+    <string name="task_name">Task Name:</string>
+    <string name="add_reward">Reward</string>
+    <string name="reward">Reward:</string>
+    <string name="view_task_question_set_name">Question Set: %s</string>
+    <string name="view_task_pass_mark">Pass Mark: %d%%</string>
+    <string name="view_task_reward">Reward: %s</string>
+    <string name="reward_details">Task Reward: %s</string>
+    <string name="not_completed">Not Completed</string>
+    <string name="task_deleted">Task Deleted</string>
+    <string name="task_completed">%s Completed</string>
+
+    <string name="view_tasks">View Tasks</string>
+    <string name="tasked">Tasked</string>
+    <string name="completed">Completed</string>
+    <string name="nothing_here">Nothing To Show Here</string>
+
+    <string name="settings">Settings</string>
+    <string name="themes">Themes:</string>
+    <string name="preferences">Preferences:</string>
+    <string name="show_Refreshers">Show Refreshers</string>
+
+    <string name="got_it">Got It!</string>
+
+    <string name="invalid_answer">Your Answer is Invalid</string>
+
+
+    <!-- Extra Content Description -->
+    <string name="question_set_image">Question Set Image</string>
+    <string name="question_image">Question Image</string>
+    <string name="help">Help</string>
+    <string name="previous_question">Previous Question</string>
+    <string name="next_question">Next Question</string>
+    <string name="question_result">Question Result</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="perfect_topics">Perfect Topics</string>
+    <string name="other_topics">Other Topics</string>
+    <string name="desc_account">Account</string>
+    <string name="search">Search</string>
+    <string name="theme">Theme</string>
+</resources>

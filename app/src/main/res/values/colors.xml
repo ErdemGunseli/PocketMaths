@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ### Constants ### -->
+
+    <!-- Onyx -->
+    <color name="Primary">#404040</color>
+
+    <!-- Light Grey -->
+    <color name="Secondary">#CFCFCF</color>
+
+    <!-- Menu -->
+    <color name="OxfordBlue">#02223C</color>
+
+    <!-- Accent -->
+    <color name="YellowOrange">#FFBB5C</color>
+
+    <!-- Highlight -->
+    <color name="MellowApricot">#FFCC85</color>
+
+    <!-- Light Background -->
+    <color name="Platinum">#E6E8E6</color>
+
+    <!-- Dark Background -->
+    <color name="Shark">#25272C</color>
+
+    <!-- Default Surface -->
+    <color name="Silver">#C0C0C0</color>
+
+
+    <!--## Default Theme (Blue) ##-->
+
+    <!-- Surface1 -->
+    <color name="AirSuperiorityBlue">#71A1C1</color>
+
+    <!-- Surface2 -->
+    <color name="BlueGray">#6596CD</color>
+
+
+
+    <!--## Theme 2 - Red & Green ##-->
+
+    <!-- Surface 1 -->
+    <color name="BudGreen">#61AF5A</color>
+
+    <!-- Surface 2 -->
+    <color name="FireOpal">#EB5D47</color>
+
+
+
+
+    <!-- ## Theme 3 - Green & Yellow  ## -->
+
+    <!-- Surface 1 -->
+    <color name="GreenSheen">#81B29A</color>
+
+    <!-- Surface 2 -->
+    <color name="VegasGold">#C7B857</color>
+
+    <!-- Radio Button -->
+    <color name="MediumChampagne">#E0D8A3</color>
+
+
+
+    <!-- ## Theme 4 - Blue & Green ## -->
+
+    <!-- Surface 1 -->
+    <color name="CornflowerBlue">#5C9AFF</color>
+
+    <!-- Surface 2 -->
+    <color name="Olivine">#94B964</color>
+
+
+</resources>

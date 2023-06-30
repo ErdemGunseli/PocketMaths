@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/svResults"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="35dp"
+            android:elevation="100dp"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/imgExit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/back"
+                    android:src="@drawable/ic_back" />
+
+
+                <TextView
+                    android:id="@+id/txtQuestionSetName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/YellowOrange"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pieResults"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_below="@id/txtQuestionSetName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="15dp" />
+
+
+                <TextView
+                    android:id="@+id/txtResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pieResults"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/YellowOrange"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtFirstAttempt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtResult"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtSecondAttempt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtFirstAttempt"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txtResultPercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtSecondAttempt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/YellowOrange"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/rvTopicFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtResultPercentage">
+
+                    <ImageView
+                        android:id="@+id/imgPerfect"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/perfect_topics"
+                        android:src="@drawable/ic_perfect" />
+
+
+                    <TextView
+                        android:id="@+id/txtPerfect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/imgPerfect"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@id/imgPerfect"
+                        android:text="@string/did_great"
+                        android:textColor="@color/YellowOrange"
+                        android:textSize="17sp" />
+
+
+                    <ImageView
+                        android:id="@+id/imgPractice"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@id/txtPerfect"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="@string/other_topics"
+                        android:src="@drawable/ic_practice" />
+
+                    <TextView
+                        android:id="@+id/txtPractice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/imgPractice"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@id/imgPractice"
+                        android:text="@string/practice"
+                        android:textColor="@color/YellowOrange"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/txtSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/YellowOrange"
+            android:text="@string/review"
+            android:layout_below="@id/cvResults"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSummary"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/finish"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rvQuestions"
+            android:layout_marginBottom="35dp"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>

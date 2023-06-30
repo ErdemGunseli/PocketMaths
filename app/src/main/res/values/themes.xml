@@ -1,0 +1,193 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ## Default Theme (Blue) ## -->
+    <style name="Theme.PocketMaths" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/OxfordBlue</item>
+
+        <item name="android:textColor">@color/Primary</item>
+
+        <item name="android:textColorHighlight">@color/MellowApricot</item>
+
+        <item name="colorAccent">@color/YellowOrange</item>
+
+        <item name="android:colorEdgeEffect">@color/YellowOrange</item>
+
+        <item name="fontFamily">@font/metropolis_light</item>
+
+        <item name="android:windowBackground">@drawable/default_symbols_background_bitmap</item>
+
+        <item name="materialCardViewStyle">@style/defaultCardView1</item>
+
+        <item name="cardViewStyle">@style/defaultCardView2</item>
+
+        <item name="editTextStyle">@style/defaultEditText</item>
+
+        <item name="materialButtonStyle">@style/defaultButton</item>
+
+        <item name="radioButtonStyle">@style/defaultRadioButton</item>
+
+        <item name="tabStyle">@style/defaultTabLayout</item>
+
+    </style>
+
+    <!-- CardView Theme -->
+    <style name="defaultCardView1" parent="">
+        <item name="cardBackgroundColor">@color/AirSuperiorityBlue</item>
+        <item name="elevation">100dp</item>
+        <item name="cardCornerRadius">3dp</item>
+    </style>
+
+    <style name="defaultCardView2" parent="defaultCardView1">
+        <item name="cardBackgroundColor">@color/BlueGray</item>
+    </style>
+
+    <style name="defaultCardView3" parent="defaultCardView1">
+        <item name="cardBackgroundColor">@color/Silver</item>
+    </style>
+
+    <!-- EditText Theme -->
+    <style name="defaultEditText" parent="@android:style/Widget.EditText">
+        <item name="android:textColorHint">@color/Primary</item>
+        <item name="android:textColor">@color/Primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Button Theme -->
+    <style name="defaultButton" parent="@style/Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/YellowOrange</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="haloColor">@color/YellowOrange</item>
+
+    </style>
+
+    <style name="defaultTextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/YellowOrange</item>
+        <item name="rippleColor">@color/YellowOrange</item>
+    </style>
+
+    <!-- Radio Button Theme -->
+    <style name="defaultRadioButton" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/Secondary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:buttonTint">@color/Silver</item>
+    </style>
+
+    <!-- Tab Layout Theme -->
+    <style name="defaultTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/YellowOrange</item>
+        <item name="tabSelectedTextColor">@color/YellowOrange</item>
+        <item name="android:colorAccent">@color/YellowOrange</item>
+        <item name="tabBackground">@color/AirSuperiorityBlue</item>
+    </style>
+
+    <!-- Slider Label Theme -->
+    <style name="sliderLabel" parent="Widget.MaterialComponents.Tooltip">
+        <item name="backgroundTint">@color/Silver</item>
+    </style>
+
+
+    <!-- ## Theme 2 - Red & Green ## -->
+    <style name="RedGreen" parent="Theme.PocketMaths">
+
+        <item name="materialCardViewStyle">@style/redGreenCardView1</item>
+        <item name="cardViewStyle">@style/redGreenCardView2</item>
+        <item name="tabStyle">@style/redGreenTabLayout</item>
+
+    </style>
+
+    <!-- CardView Theme -->
+    <style name="redGreenCardView1" parent="defaultCardView1">
+        <item name="cardBackgroundColor">@color/BudGreen</item>
+    </style>
+
+    <style name="redGreenCardView2" parent="defaultCardView2">
+        <item name="cardBackgroundColor">@color/FireOpal</item>
+    </style>
+
+    <!-- Tab Layout Theme -->
+    <style name="redGreenTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/YellowOrange</item>
+        <item name="tabSelectedTextColor">@color/YellowOrange</item>
+        <item name="android:colorAccent">@color/YellowOrange</item>
+        <item name="tabBackground">@color/BudGreen</item>
+    </style>
+
+
+
+
+    <!-- ## Theme 3 - Green & Yellow ## -->
+
+    <style name="GreenYellow" parent="Theme.PocketMaths">
+
+        <item name="materialCardViewStyle">@style/greenYellowCardView1</item>
+        <item name="cardViewStyle">@style/greenYellowCardView2</item>
+        <item name="radioButtonStyle">@style/greenYellowRadioButton</item>
+        <item name="tabStyle">@style/greenYellowTabLayout</item>
+
+    </style>
+
+    <!-- CardView Theme -->
+    <style name="greenYellowCardView1" parent="defaultCardView1">
+        <item name="cardBackgroundColor">@color/GreenSheen</item>
+    </style>
+
+    <style name="greenYellowCardView2" parent="defaultCardView2">
+        <item name="cardBackgroundColor">@color/VegasGold</item>
+    </style>
+
+    <!-- Radio Button Theme -->
+    <style name="greenYellowRadioButton" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/Primary</item>
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:buttonTint">@color/MediumChampagne</item>
+    </style>
+
+    <!-- Tab Layout Theme -->
+    <style name="greenYellowTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/YellowOrange</item>
+        <item name="tabSelectedTextColor">@color/YellowOrange</item>
+        <item name="android:colorAccent">@color/YellowOrange</item>
+        <item name="tabBackground">@color/GreenSheen</item>
+    </style>
+
+
+
+
+
+    <style name="BlueGreen" parent="Theme.PocketMaths">
+
+        <item name="materialCardViewStyle">@style/blueGreenCardView1</item>
+        <item name="cardViewStyle">@style/blueGreenCardView2</item>
+        <item name="tabStyle">@style/blueGreenTabLayout</item>
+        <item name="radioButtonStyle">@style/blueGreenRadioButton</item>
+
+    </style>
+
+    <!-- CardView Theme -->
+    <style name="blueGreenCardView1" parent="defaultCardView1">
+        <item name="cardBackgroundColor">@color/CornflowerBlue</item>
+    </style>
+
+    <style name="blueGreenCardView2" parent="defaultCardView2">
+        <item name="cardBackgroundColor">@color/Olivine</item>
+    </style>
+
+    <!-- Radio Button Theme -->
+    <style name="blueGreenRadioButton" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/Primary</item>
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:buttonTint">@color/Silver</item>
+    </style>
+
+    <!-- Tab Layout Theme -->
+    <style name="blueGreenTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/YellowOrange</item>
+        <item name="tabSelectedTextColor">@color/YellowOrange</item>
+        <item name="android:colorAccent">@color/YellowOrange</item>
+        <item name="tabBackground">@color/CornflowerBlue</item>
+    </style>
+</resources>

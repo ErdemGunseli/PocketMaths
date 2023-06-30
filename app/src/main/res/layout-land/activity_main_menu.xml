@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relMainMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.PocketMaths.MainMenuActivity"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="0dp"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/svQuestionSet"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="5"
+            android:inputType="textAutoComplete"
+            android:orientation="vertical"
+            android:maxWidth="120dp"
+            android:searchIcon="@drawable/ic_search" />
+
+
+        <ImageView
+            android:id="@+id/imgAccount"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_account"
+            android:contentDescription="@string/desc_account"
+            />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtNoResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/no_results"
+        android:textSize="16sp"
+        android:textColor="@color/YellowOrange"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        app:cardCornerRadius="0dp"
+        >
+    <LinearLayout
+        android:id="@+id/linMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgTasks"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_tasks"
+            android:contentDescription="@string/view_tasks"
+            />
+
+        <ImageView
+            android:id="@+id/imgCreateTask"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_create_task"
+            android:contentDescription="@string/create_task"
+            />
+
+        <ImageView
+            android:id="@+id/imgSettings"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_settings"
+            android:contentDescription="@string/settings"
+            />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relSignUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="25dp">
+
+                <TextView
+                    android:id="@+id/txtSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/YellowOrange"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edtTxtParentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtSignUp"
+                    android:layout_marginTop="15dp"
+                    android:hint="@string/parent_name"
+                    android:inputType="textCapSentences"
+                    android:maxLength="20"
+                    android:textSize="16sp"
+                    android:autofillHints="name"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edtTxtStudentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtTxtParentName"
+                    android:layout_marginTop="15dp"
+                    android:hint="@string/student_name"
+                    android:inputType="textCapSentences"
+                    android:maxLength="20"
+                    android:textSize="16sp"
+                    android:autofillHints="name"
+                    />
+
+                <EditText
+                    android:id="@+id/edtTxtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtTxtStudentName"
+                    android:layout_marginTop="15dp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:textSize="16sp"
+                    android:autofillHints="emailAddress"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edtTxtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtTxtEmail"
+                    android:layout_marginTop="15dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textSize="16sp"
+                    android:autofillHints="password"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edtTxtConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtTxtPassword"
+                    android:layout_marginTop="15dp"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textSize="16sp"
+                    android:autofillHints="password"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edtTxtPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtTxtConfirmPassword"
+                    android:layout_marginTop="15dp"
+                    android:hint="@string/pin"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:textSize="16sp"
+                    android:importantForAutofill="no"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edtTxtConfirmPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtTxtPin"
+                    android:layout_marginTop="15dp"
+                    android:hint="@string/confirm_pin"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:textSize="16sp"
+                    android:importantForAutofill="no"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnBack"
+                    style="@style/defaultTextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtTxtConfirmPin"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/back"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtTxtConfirmPin"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/btnBack"
+                    android:text="@string/sign_up" />
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </ScrollView>
+
+</RelativeLayout>

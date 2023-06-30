@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.PocketMaths">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PocketMaths">
+        <activity
+            android:name=".QuestionSetActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignInActivity"/>
+        <activity android:name=".SignUpActivity"/>
+        <activity android:name=".MainMenuActivity"
+            android:windowSoftInputMode="adjustNothing"
+            />
+        <activity android:name=".ResultsActivity"/>
+        <activity android:name=".AccountActivity"/>
+        <activity android:name=".PinVerificationActivity"/>
+        <activity android:name=".ChangeDetailsActivity"/>
+        <activity android:name=".TaskCreateActivity"/>
+        <activity android:name=".TaskViewActivity"/>
+        <activity android:name=".SettingsActivity"/>
+        <activity android:name=".RefresherActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relQuestionSet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/svQuestionSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            tools:context="com.example.PocketMaths.QuestionSetActivity">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgExit"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/back"
+                        android:src="@drawable/ic_back" />
+
+                    <LinearLayout
+                        android:id="@+id/linInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/imgExit"
+                        android:layout_toEndOf="@id/imgExit"
+                        android:layout_toStartOf="@id/imgHelp"
+                        android:layout_margin="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/txtQuestionSetName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/YellowOrange"
+                            android:layout_marginEnd="5dp"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtCurrentQuestionIndex"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/YellowOrange"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtPointsPossible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgQuestion"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="15dp"
+                        android:textColor="@color/YellowOrange"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/txtQuestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linInfo"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="15dp"
+                        android:contentDescription="@string/question_image"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/imgQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/txtQuestion"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="25dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/question_image"
+                        android:maxHeight="300dp" />
+
+                    <ImageView
+                        android:id="@+id/imgHelp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:contentDescription="@string/help"
+                        android:src="@drawable/ic_help" />
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvQuestionAnswerMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cvQuestion"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="45dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relAnswerMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/relQuestionAnswerOptions"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true">
+
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/txtMessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/relQuestionAnswerOptions"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/YellowOrange"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/relWrittenAnswer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtMessage">
+
+                            <EditText
+                                android:id="@+id/edtTxtAnswer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/Silver"
+                                android:hint="@string/answer"
+                                android:inputType=""
+                                android:maxLength="10"
+                                android:padding="10dp"
+                                android:textColor="@color/Primary"
+                                android:textColorHint="@color/Primary"
+                                android:textSize="16sp"
+                                tools:ignore="Autofill" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnRevealAnswer"
+                                style="@style/defaultTextButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_toEndOf="@id/edtTxtAnswer"
+                                android:text="@string/reveal_answer"
+                                android:textAlignment="center" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/btnConfirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relAnswerMenu"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="@color/YellowOrange"
+                        android:text="@string/check" />
+
+                    <ImageView
+                        android:id="@+id/imgPrevious"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/relAnswerMenu"
+                        android:layout_alignBottom="@id/btnConfirm"
+                        android:layout_marginTop="5dp"
+                        android:layout_toStartOf="@id/btnConfirm"
+                        android:contentDescription="@string/previous_question"
+                        android:src="@drawable/ic_previous" />
+
+                    <ImageView
+                        android:id="@+id/imgNext"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/relAnswerMenu"
+                        android:layout_alignBottom="@id/btnConfirm"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@id/btnConfirm"
+                        android:contentDescription="@string/next_question"
+                        android:src="@drawable/ic_next" />
+
+                    <ImageView
+                        android:id="@+id/imgResult"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignTop="@id/btnConfirm"
+                        android:layout_alignBottom="@id/btnConfirm"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:contentDescription="@string/question_result" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

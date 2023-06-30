@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ## Default Theme (Blue) ## -->
+    <style name="Theme.PocketMaths" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/OxfordBlue</item>
+
+        <item name="android:textColor">@color/Primary</item>
+
+        <item name="android:textColorHighlight">@color/MellowApricot</item>
+
+        <item name="colorAccent">@color/YellowOrange</item>
+
+        <item name="android:colorEdgeEffect">@color/YellowOrange</item>
+
+        <item name="fontFamily">@font/metropolis_light</item>
+
+        <item name="android:windowBackground">@drawable/dark_mode_background_bitmap</item>
+
+        <item name="materialCardViewStyle">@style/defaultCardView1</item>
+
+        <item name="cardViewStyle">@style/defaultCardView2</item>
+
+        <item name="editTextStyle">@style/defaultEditText</item>
+
+        <item name="materialButtonStyle">@style/defaultButton</item>
+
+        <item name="radioButtonStyle">@style/defaultRadioButton</item>
+
+        <item name="tabStyle">@style/defaultTabLayout</item>
+
+
+    </style>
+
+</resources>
